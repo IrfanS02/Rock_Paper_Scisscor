@@ -43,7 +43,7 @@
         document.querySelector('.js-score').innerHTML = 
             `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
 
-        const playGame=(playerChoice) => {
+        const playGame = (playerChoice) => {
             const randomNumber = Math.random();
             let computerChoice = '';
 
@@ -84,11 +84,9 @@
             document.querySelector('.js-result').innerHTML = result;
             document.querySelector('.js-moves').innerHTML = 
                 `You: ${playerChoice} - Computer: ${computerChoice}`;
-
-           
         }
 
-         const updateScoreElement= () =>{
+        const updateScoreElement = () => {
             document.querySelector('.js-score').innerHTML = 
                 `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
         }
@@ -101,12 +99,12 @@
             updateScoreElement();
         }
 
-        const showAlert=(message) =>{
+        const showAlert = (message) => {
             document.getElementById('alertText').innerText = message;
             document.getElementById('alertModal').style.display = 'block';
         }
 
-        const closeModal=()=> {
+        const closeModal = () => {
             document.getElementById('alertModal').style.display = 'none';
         }
     </script>
